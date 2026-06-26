@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/background">
+
+    <!--
+      RecyclerView + AlphabetScrollbarView sit side-by-side in a single
+      horizontal LinearLayout — no overlapping elements anywhere.
+    -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.slick.launcher.AlphabetScrollbarView
+        android:id="@+id/alphabet_scrollbar"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:paddingVertical="4dp" />
+
+</LinearLayout>

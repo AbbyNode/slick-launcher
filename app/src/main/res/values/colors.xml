@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Canvas -->
+    <color name="background">#0F0F14</color>
+    <color name="surface">#1A1A24</color>
+
+    <!-- Accent — Material You purple -->
+    <color name="accent">#BB86FC</color>
+    <color name="accent_dim">#55BB86FC</color>
+
+    <!-- Text -->
+    <color name="text_primary">#EEEEFF</color>
+    <color name="text_secondary">#7A7A99</color>
+
+    <!-- System -->
+    <color name="ripple_color">#33BB86FC</color>
+</resources>
