@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Minimal "S" glyph in accent purple for the adaptive icon foreground -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Rounded square pill -->
+    <path
+        android:fillColor="#22BB86FC"
+        android:pathData="M30,54 m0,-24 a24,24 0 0 1 24,-24 h0 a24,24 0 0 1 24,24 v48 a24,24 0 0 1 -24,24 h0 a24,24 0 0 1 -24,-24 Z" />
+
+    <!-- "S" letter path centred in the icon -->
+    <path
+        android:strokeColor="#BB86FC"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="
+            M62,38
+            C62,34 58,30 54,30
+            C49,30 44,34 44,39
+            C44,44 48,46 54,48
+            C60,50 64,53 64,58
+            C64,64 59,68 54,68
+            C49,68 44,64 44,60" />
+</vector>
