@@ -20,7 +20,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Generate Gradle wrapper
-        run: gradle wrapper --gradle-version 8.2.2 --distribution-type bin --no-validate-url
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.2.2-bin.zip -O /tmp/gradle.zip
+          unzip -q /tmp/gradle.zip -d /tmp/gradle-dist
+          /tmp/gradle-dist/gradle-8.2.2/bin/gradle wrapper --gradle-version 8.2.2 --distribution-type bin --no-validate-url
 
       - name: Cache Gradle packages
         uses: actions/cache@v4
